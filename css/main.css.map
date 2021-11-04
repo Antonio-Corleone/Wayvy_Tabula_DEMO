@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC,CAAA;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,EAAE,IAAI,CAAA;EACR,WAAW,EAAE,wBAAwB;EDLrC,KAAK,EDCS,OAAO;ECArB,SAAS,EDKJ,IAAI;ECJT,WAAW,EDcN,GAAG;EETR,gBAAgB,EFLJ,OAAO;CEMpB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/Helper/_variables.scss",
+        "../scss/Helper/_mixin.scss",
+        "../scss/Base/_reset.scss",
+        "../scss/Base/_customize.scss",
+        "../scss/Components/_buttons.scss",
+        "../scss/Components/_card.scss",
+        "../scss/Layouts/_header.scss",
+        "../scss/Layouts/_about.scss",
+        "../scss/Layouts/_people.scss",
+        "../scss/Layouts/_findCourse.scss",
+        "../scss/Layouts/_contact.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
