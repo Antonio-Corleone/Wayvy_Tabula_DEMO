@@ -1,0 +1,29 @@
+.about{
+	position: relative;
+	.top-cover-img, .bot-cover-img{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		img{
+			width: 100%;
+			display: block;
+		}
+	}
+	.bot-cover-img{
+		bottom: 0;
+	}
+	.about__content{
+		padding: $pd-8 0;
+		h4{
+			@include styleText($color-pink, $fs-4 + 0.5, $fw-3);
+			margin-bottom: $mr-1 + 1;
+		}
+		h1{
+			@include styleText($color-black-1, $fs-7, $fw-4);
+		}
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}

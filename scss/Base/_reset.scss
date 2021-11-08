@@ -9,3 +9,6 @@ html, body{
   @include styleText($color-black-2, $fs-2, $fw-3);
   background-color: $color-white;
 }
+.page__wrapper{
+  overflow-x: hidden;
+}

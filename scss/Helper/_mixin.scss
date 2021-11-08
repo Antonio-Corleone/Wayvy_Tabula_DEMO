@@ -7,8 +7,6 @@
 
 //Buttons
 
-//Cards
-
 //Media query
 @mixin responsive($screen) {   
   @if(map-has-key($map:$breakpoints , $key:$screen )){      

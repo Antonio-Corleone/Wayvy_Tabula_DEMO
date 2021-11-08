@@ -12,4 +12,247 @@ html, body {
   font-weight: 600;
   background-color: #ffffff;
 }
+
+.page__wrapper {
+  overflow-x: hidden;
+}
+
+.people__card {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.people__card .card-img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.people__card .card-img img {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.people__card .card-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.people__card .card-text {
+  margin-top: 20px;
+}
+
+.people__card .card-text span {
+  color: #b61984;
+  font-size: 11.25px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.people__card .card-text h2 {
+  color: #191919;
+  font-size: 23.25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.people__card .card-text p {
+  color: #181818;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.people__card:hover {
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+#header .navbar {
+  padding-top: 0;
+}
+
+#header .navbar .navbar-brand {
+  padding-top: 0;
+}
+
+#header .navbar .navbar-brand img {
+  width: 90%;
+}
+
+#header .navbar .nav-item {
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+#header .navbar .nav-item .nav-link {
+  position: relative;
+  color: #181818;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 30px 0;
+}
+
+#header .navbar .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #b61984;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  margin-top: 45px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#header .navbar .nav-item:hover .nav-link {
+  color: #b61984;
+}
+
+#header .navbar .nav-item:hover .nav-link::after {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#header .navbar .active .nav-link::after {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+#header .navbar #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .navbar #menu #menu__phone {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  position: relative;
+  background-color: #b61984;
+  padding: 12.5px 20.25px;
+  margin: 6px;
+  border: 1px solid #b61984;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#header .navbar #menu #menu__phone #myBtn {
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+}
+
+#header .navbar #menu #menu__phone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 50px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#header .navbar #menu #menu__phone:hover #myBtn {
+  color: #b61984;
+}
+
+#header .navbar #menu #menu__phone:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#header .navbar #menu .menu__icons a {
+  margin-left: 11.7px;
+  text-decoration: none;
+  color: #191919;
+}
+
+#header .navbar #menu .menu__icons a:hover {
+  color: #b61984;
+}
+
+.about {
+  position: relative;
+}
+
+.about .top-cover-img, .about .bot-cover-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.about .top-cover-img img, .about .bot-cover-img img {
+  width: 100%;
+  display: block;
+}
+
+.about .bot-cover-img {
+  bottom: 0;
+}
+
+.about .about__content {
+  padding: 60px 0;
+}
+
+.about .about__content h4 {
+  color: #b61984;
+  font-size: 16.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.about .about__content h1 {
+  color: #191919;
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.about .about__content img {
+  display: block;
+  width: 100%;
+}
+
+.people {
+  background-color: #dcd1f0;
+  position: relative;
+}
+
+.people .bot-cover-img img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

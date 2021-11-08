@@ -12,6 +12,14 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,19 +28,221 @@
       rel="stylesheet"
     />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header id="header"></header>
-    <!-- About Us -->
-    <section class="about"></section>
-    <!-- People -->
-    <section class="people"></section>
-    <!-- Find Course -->
-    <section class="findCourse"></section>
-    <!-- Contact -->
-    <section class="contact"></section>
+    <div class="page__wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="container p-0">
+          <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand" href="#">
+              <img src="./img/crest.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#myNav"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Elements</a>
+                </li>
+              </ul>
+            </div>
+            <div id="menu">
+              <div id="menu__phone">
+                <a href="#" id="myBtn">
+                  <i class="fa fa-phone"></i>
+                  <span>(+1) 555 234-8765</span>
+                </a>
+              </div>
+              <div class="menu__icons">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- About Us -->
+      <section class="about">
+        <div class="top-cover-img">
+          <img src="./img/yellow_top_wave_01.png" alt="" />
+        </div>
+        <div class="about__content">
+          <div class="container p-0">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <h4>ABOUT US</h4>
+                <h1>The language teaching experts</h1>
+              </div>
+              <div class="col-6">
+                <img src="./img/hero_team.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bot-cover-img">
+          <img src="./img/Violet_top_left_wave.png" alt="" />
+        </div>
+      </section>
+      <!-- People -->
+      <section class="people">
+        <div class="bot-cover-img">
+          <img src="./img/Wave_White_bottom_right_shape_01.png" alt="" />
+        </div>
+        <div class="people__content">
+          <div class="container p-0">
+            <div class="row">
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_1.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_2.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>FRENCH</span>
+                    <h2>July Roberts</h2>
+                    <p>Nanotechnology immersion along the information.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_3.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>JAPANESE</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Bring to the table win-win survival strategies to ensure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_4.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>CHINESE</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Proactive domination. At the end of the day, going
+                      forward.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_5.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>RUSSIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>A new normal that has evolved from generation X.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_6.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>SWEDEN</span>
+                    <h2>July Roberts</h2>
+                    <p>Heading towards a streamlined cloud solution.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_7.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>SPANISH</span>
+                    <h2>July Roberts</h2>
+                    <p>Content in real-time will have multiple touchpoints.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-4">
+                <div class="people__card">
+                  <div class="card-img">
+                    <img src="./img/teacher_8.jpg" alt="" />
+                  </div>
+                  <div class="card-text">
+                    <span>ITALIAN</span>
+                    <h2>July Roberts</h2>
+                    <p>
+                      Capitalize on low hanging fruit to identify a ballpark.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Find Course -->
+      <section class="findCourse"></section>
+      <!-- Contact -->
+      <section class="contact"></section>
+    </div>
     <!-- BS4 -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

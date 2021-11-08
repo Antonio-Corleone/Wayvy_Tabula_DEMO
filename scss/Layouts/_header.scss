@@ -1,0 +1,99 @@
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  .navbar {
+    padding-top: 0;
+    .navbar-brand {
+      padding-top: 0;
+      img {
+        width: 90%;
+      }
+    }
+    .nav-item {
+      padding-right: $pd-7;
+      cursor: pointer;
+      .nav-link {
+        position: relative;
+        @include styleText($color-black-2, $fs-2, $fw-3);
+        padding: $pd-3 + 5 0;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 30%;
+          width: $pd-1;
+          height: $pd-1;
+          border-radius: $bd-1;
+          background-color: $color-pink;
+          transform: scale(0);
+          margin-top: $mr-5 - 5;
+          transition: all 0.3s ease;
+        }
+      }
+      &:hover .nav-link{
+        color: $color-pink;
+        &::after{
+          transform: scale(0.9);
+        }
+      }
+    }
+    .active {
+      .nav-link {
+        &::after {
+          transform: scale(0.6);
+        }
+      }
+    }
+    #menu {
+      display: flex;
+      align-items: center;
+      #menu__phone {
+        flex-basis: auto;
+        position: relative;
+        background-color: $color-pink;
+        padding: $pd-1 - 2.5 $pd-2 + 0.25;
+        margin: $mr-1 + 1;
+        border: 1px solid $color-pink;
+        border-radius: $bd-2;
+        cursor: pointer;
+        z-index: 100;
+        transition: all 0.3s ease;
+        #myBtn {
+          @include styleText($color-white, $fs-2 + 0.5, $fw-3);
+          text-decoration: none;
+          line-height: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-color: $color-white;
+          border-radius: $bd-2;
+          transform: scale(0);
+          z-index: -1;
+          transition: all .3s ease;
+        }
+        &:hover #myBtn {
+          color: $color-pink;
+        }
+        &:hover::after {
+          transform: scale(1);
+        }
+      }
+      .menu__icons {
+        a {
+          margin-left: $mr-2 + 1.7;
+          text-decoration: none;
+          color: $color-black-1;
+          &:hover {
+            color: $color-pink;
+          }
+        }
+      }
+    }
+  }
+}
