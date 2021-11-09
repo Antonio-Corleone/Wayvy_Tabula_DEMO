@@ -48,42 +48,6 @@
     #menu {
       display: flex;
       align-items: center;
-      #menu__phone {
-        flex-basis: auto;
-        position: relative;
-        background-color: $color-pink;
-        padding: $pd-1 - 2.5 $pd-2 + 0.25;
-        margin: $mr-1 + 1;
-        border: 1px solid $color-pink;
-        border-radius: $bd-2;
-        cursor: pointer;
-        z-index: 100;
-        transition: all 0.3s ease;
-        #myBtn {
-          @include styleText($color-white, $fs-2 + 0.5, $fw-3);
-          text-decoration: none;
-          line-height: 1;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          background-color: $color-white;
-          border-radius: $bd-2;
-          transform: scale(0);
-          z-index: -1;
-          transition: all .3s ease;
-        }
-        &:hover #myBtn {
-          color: $color-pink;
-        }
-        &:hover::after {
-          transform: scale(1);
-        }
-      }
       .menu__icons {
         a {
           margin-left: $mr-2 + 1.7;

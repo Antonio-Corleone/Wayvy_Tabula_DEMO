@@ -1,0 +1,75 @@
+.contact {
+  padding: $pd-9 0;
+  position: relative;
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 53vh;
+  // .top-cover-img {
+  //   img {
+  //     width: 100%;
+  //     display: block;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //   }
+  // }
+  .contact__content {
+    .contact__item {
+      h2 {
+        @include styleText($color-white, $fs-5 + 0.5, $fw-5);
+        margin-bottom: $mr-4;
+      }
+      .contact__text {
+        p {
+          @include styleText($color-white, $fs-2 + 0.5, $fw-2);
+        }
+        span {
+          padding-right: $mr-2 + 0.8;
+        }
+        li {
+          list-style: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          a {
+            text-decoration: none;
+            @include styleText($color-white, $fs-2 + 0.5, $fw-2);
+            transition: all .3s ease;
+            &:hover{
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+      }
+      .contact__icons {
+        a {
+          padding-right: $pd-1;
+          color: $color-white;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $color-black-1;
+          }
+        }
+      }
+      .subcribe{
+        input{
+          width: 100%;
+          border-radius: $bd-2;
+          text-align: center;
+          outline: none;
+          padding: $pd-1;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          background-color: transparent;
+          @include styleText($color-white, $fs-2, $fw-2);
+          transition: all .3s ease;
+        }
+        ::placeholder{
+          color: $color-white;
+        }
+        :focus{
+          border: 1px solid rgba(255,255,255,1)
+        }
+      }
+    }
+  }
+}
