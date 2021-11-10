@@ -13,10 +13,6 @@ html, body {
   background-color: #ffffff;
 }
 
-.page__wrapper {
-  overflow-x: hidden;
-}
-
 #btn__phone {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
@@ -212,7 +208,9 @@ html, body {
 #header {
   position: fixed;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 1000;
 }
 
@@ -287,6 +285,51 @@ html, body {
 
 #header .navbar #menu .menu__icons a:hover {
   color: #b61984;
+}
+
+#header .navbar .show {
+  overflow-y: auto;
+  max-height: 65vh;
+  padding-bottom: 15px;
+}
+
+#header .navbar .show .nav-item {
+  padding: 0;
+}
+
+#header .navbar .show .nav-item .nav-link {
+  padding: 15px;
+}
+
+#header .navbar .show .nav-item .nav-link::after {
+  background-color: transparent;
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 11px;
+  position: absolute;
+  left: 20%;
+  margin-top: 0;
+  color: #b61984;
+}
+
+#header .navbar .show #menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#header .navbar .show #menu #btn__phone {
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+#header .navbar .show #menu #menu__icons {
+  margin-left: 0;
+  margin-right: 11.7px;
 }
 
 .about {
@@ -393,36 +436,78 @@ html, body {
 }
 
 .findCourse .findCourse__content .findCourse__right .findCourse__form #name input, .findCourse .findCourse__content .findCourse__right .findCourse__form #email input {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
   padding: 12px 12px 12px 42px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  width: 100%;
-  outline: none;
+}
+
+.findCourse .findCourse__content .findCourse__right .findCourse__form #name input:focus, .findCourse .findCourse__content .findCourse__right .findCourse__form #email input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .findCourse .findCourse__content .findCourse__right .findCourse__form #language select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  opacity: 0.8;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  outline: none;
   width: 100%;
+  background-color: transparent;
   padding: 12px 12px 12px 37px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
 }
 
+.findCourse .findCourse__content .findCourse__right .findCourse__form #language select:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.findCourse .findCourse__content .findCourse__right .findCourse__form #language::after {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 11px;
+  position: absolute;
+  right: 7%;
+  top: 36%;
+  color: #b61984;
+  opacity: 0.5;
+}
+
 .findCourse .findCourse__content .findCourse__right .findCourse__form #mytxt textarea {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  outline: none;
   width: 100%;
-  height: 100px;
+  background-color: transparent;
   padding: 12px 12px 12px 42px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  outline: none;
+  height: 100px;
+}
+
+.findCourse .findCourse__content .findCourse__right .findCourse__form #mytxt textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .contact {
   padding: 120px 0;
   position: relative;
-  background-image: url(../img/footer_background.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 53vh;
+}
+
+.contact .top-cover-img img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact .contact__content .contact__item h2 {
@@ -473,18 +558,18 @@ html, body {
 }
 
 .contact .contact__content .contact__item .subcribe input {
-  width: 100%;
-  border-radius: 50px;
   text-align: center;
   outline: none;
-  padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
   background-color: transparent;
+  padding: 15px 15px 15px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
   color: #ffffff;
   font-size: 13px;
   font-weight: 400;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .contact .contact__content .contact__item .subcribe ::-webkit-input-placeholder {

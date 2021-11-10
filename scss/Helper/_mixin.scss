@@ -27,6 +27,15 @@
   z-index: -1;
   transition: all .3s ease;
 }
+//Input
+@mixin styleInput($p-t, $p-r, $p-b, $p-l, $bd, $radius) {
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  padding: $p-t $p-r $p-b $p-l;
+  border: $bd;
+  border-radius: $radius;
+}
 //Media query
 @mixin responsive($screen) {
   @if (map-has-key($map: $breakpoints, $key: $screen)) {

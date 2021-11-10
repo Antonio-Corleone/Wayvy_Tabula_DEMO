@@ -1,19 +1,15 @@
 .contact {
   padding: $pd-9 0;
   position: relative;
-  background-image: url(../img/footer_background.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 53vh;
-  // .top-cover-img {
-  //   img {
-  //     width: 100%;
-  //     display: block;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //   }
-  // }
+  .top-cover-img {
+    img {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   .contact__content {
     .contact__item {
       h2 {
@@ -53,15 +49,10 @@
       }
       .subcribe{
         input{
-          width: 100%;
-          border-radius: $bd-2;
           text-align: center;
-          outline: none;
-          padding: $pd-1;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          background-color: transparent;
+          @include styleInput($pd-1, $pd-1, $pd-1, $pd-1, 1px solid rgba(255, 255, 255, 0.1), $bd-2);
           @include styleText($color-white, $fs-2, $fw-2);
-          transition: all .3s ease;
+          transition: all .5s ease;
         }
         ::placeholder{
           color: $color-white;
