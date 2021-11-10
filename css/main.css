@@ -585,6 +585,7 @@ html, body {
 
 .contact .contact__content .contact__item .contact__text li {
   list-style: none;
+  cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -597,7 +598,7 @@ html, body {
   transition: all .3s ease;
 }
 
-.contact .contact__content .contact__item .contact__text li a:hover {
+.contact .contact__content .contact__item .contact__text li:hover a {
   color: rgba(255, 255, 255, 0.8);
 }
 

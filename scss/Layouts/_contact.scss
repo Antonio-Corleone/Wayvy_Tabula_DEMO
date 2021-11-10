@@ -22,14 +22,15 @@
         }
         li {
           list-style: none;
+          cursor: pointer;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           a {
             text-decoration: none;
             @include styleText($color-white, $fs-2 + 0.5, $fw-2);
             transition: all .3s ease;
-            &:hover{
-              color: rgba(255, 255, 255, 0.8);
-            }
+          }
+          &:hover a{
+            color: rgba(255, 255, 255, 0.8);
           }
         }
       }
