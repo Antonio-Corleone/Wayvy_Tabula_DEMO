@@ -27,3 +27,40 @@
 		}
 	}
 }
+
+//responsive
+@include responsive("extra-large-down"){
+	.about{
+		.about__content{
+			.about__text{
+				h1{
+					font-size: $fs-6 + 10.25;
+				}
+				h4{
+					font-size: $fs-3;
+				}
+			}
+		}
+	}
+}
+@include responsive("large-down"){
+	.about{
+		.about__content{
+			img{
+				width: 61%;
+			}
+			.about__text{
+				padding-top: $pd-8;
+			}
+		}
+	}
+}
+@include responsive("medium-down"){
+	.about{
+		.about__content{
+			img{
+				width: 100%;
+			}
+		}
+	}
+}

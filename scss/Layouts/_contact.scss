@@ -1,14 +1,11 @@
 .contact {
   padding: $pd-9 0;
   position: relative;
-  .top-cover-img {
-    img {
-      width: 100%;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  .container {
+    padding-bottom: $pd-9;
   }
   .contact__content {
     .contact__item {
@@ -63,4 +60,37 @@
       }
     }
   }
+}
+//responsive
+@include responsive("small"){
+.contact{
+  .contact__content{
+    .contact__item{
+      h2{
+        font-size: $fs-5 - 1;
+        font-weight: $fw-4;
+      }
+      .contact__text {
+        p{
+          font-size: $fs-2 - 0.5;
+        }
+        li{
+          a{
+            font-size: $fs-2 - 0.5;
+          }
+        }
+      }
+      .subcribe{
+        input{
+          font-size: $fs-2 - 0.5
+        }
+        #btn__contact{
+          a{
+            font-size: $fs-1;
+          }
+        }
+      }
+    }
+  }
+}
 }

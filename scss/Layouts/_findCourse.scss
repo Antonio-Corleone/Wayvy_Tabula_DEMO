@@ -83,3 +83,30 @@
     }
   }
 }
+//responsive
+@include responsive("extra-large-down"){
+.findCourse{
+  .findCourse__content{
+    .findCourse__right{
+      h2{
+        font-size: $fs-6 - 5;
+        margin-bottom: $mr-4 - 5;
+      }
+    }
+  }
+}
+}
+@include responsive("large-down"){
+  .findCourse{
+    .findCourse__content{
+      .findCourse__right{
+        h2{
+          font-size: $fs-6 - 5;
+          margin-bottom: $mr-3;
+          margin-top: $mr-4;
+          padding-left: $pd-2;
+        }
+      }
+    }
+  }
+}

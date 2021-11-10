@@ -1,8 +1,9 @@
 #header {
   position: fixed;
   width: 100%;
-  background-color: rgba(255,255,255, 0.8);
+  background-color: transparent;
   backdrop-filter: blur(5px);
+  transition: all .5s ease;
   z-index: 1000;
   .navbar {
     padding-top: 0;
@@ -35,7 +36,7 @@
       &:hover .nav-link{
         color: $color-pink;
         &::after{
-          transform: scale(0.9);
+          transform: scale(0.8);
         }
       }
     }
@@ -91,6 +92,20 @@
         #menu__icons{
           margin-left: 0;
           margin-right: $mr-2 + 1.7;
+        }
+      }
+    }
+  }
+}
+//responsive
+@include responsive("extra-large-down"){
+  #header{
+    background-color: $color-white;
+    .navbar{
+      justify-content: flex-start;
+      .navbar-brand {
+        img {
+          width: 55%;
         }
       }
     }

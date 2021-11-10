@@ -34,22 +34,22 @@
 
     <!-- Header -->
     <header id="header">
-      <div class="container p-0">
-        <nav class="navbar navbar-expand-lg p-0">
+      <div class="px-5 container-lg p-0">
+        <nav class="navbar navbar-expand-xl p-0" id="myNavbar">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
           <a class="navbar-brand" href="#">
             <img src="./img/crest.png" alt="logo" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#myNav"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa fa-bars"></i>
-          </button>
           <div class="collapse navbar-collapse" id="myNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -105,13 +105,15 @@
         <img src="./img/yellow_top_wave_01.png" alt="" />
       </div>
       <div class="about__content">
-        <div class="container p-0">
+        <div class="px-4 container-lg p-0">
           <div class="row align-items-center">
-            <div class="col-6">
-              <h4>ABOUT US</h4>
-              <h1>The language teaching experts</h1>
+            <div class="col-12 col-lg-6">
+              <div class="about__text">
+                <h4>ABOUT US</h4>
+                <h1>The language teaching experts</h1>
+              </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <img src="./img/hero_team.png" alt="" />
             </div>
           </div>
@@ -127,9 +129,9 @@
         <img src="./img/Wave_White_bottom_right_shape_01.png" alt="" />
       </div>
       <div class="people__content">
-        <div class="container p-0">
+        <div class="container-lg px-5 px-sm-4 px-lg-0">
           <div class="row">
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_1.jpg" alt="" />
@@ -143,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_2.jpg" alt="" />
@@ -155,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_3.jpg" alt="" />
@@ -169,7 +171,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_4.jpg" alt="" />
@@ -184,7 +186,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_5.jpg" alt="" />
@@ -196,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_6.jpg" alt="" />
@@ -208,7 +210,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_7.jpg" alt="" />
@@ -220,7 +222,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3 p-4">
+            <div class="col-12 col-sm-6 col-lg-3 p-4">
               <div class="people__card">
                 <div class="card-img">
                   <img src="./img/teacher_8.jpg" alt="" />
@@ -246,12 +248,12 @@
       <div class="container p-0">
         <div class="findCourse__content">
           <div class="row align-items-center">
-            <div class="col-7">
+            <div class="col-12 col-lg-7">
               <div class="findCourse__left">
                 <img src="./img/conatct_inner.png" alt="contact">
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
               <div class="findCourse__right">
                 <h2>Find Your Course</h2>
                 <div class="findCourse__form">
@@ -293,12 +295,9 @@
     <!-- Contact -->
     <section class="contact">
       <div class="container">
-        <div class="top-cover-img">
-          <img src="./img/footer_background.jpg" alt="footer_background">
-        </div>
         <div class="contact__content">
           <div class="row">
-            <div class="col-3 contact__item">
+            <div class="col-6 col-lg-3 contact__item">
               <h2>Contact us</h2>
               <div class="contact__text">
                 <p>
@@ -329,7 +328,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-3 contact__item">
+            <div class="col-6 col-lg-3 contact__item">
               <h2>Quick Links</h2>
               <div class="contact__text">
                 <ul>
@@ -348,7 +347,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3 contact__item">
+            <div class="col-6 col-lg-3 contact__item">
               <h2>About</h2>
               <div class="contact__text">
                 <ul>
@@ -367,7 +366,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3 contact__item">
+            <div class="col-6 col-lg-3 contact__item">
               <h2>Newsletter</h2>
               <form class="subcribe">
                 <input type="text" id="yourEmail" placeholder="Your email">
@@ -391,5 +390,35 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <!-- Header scroll -->
+
+    <script>
+      
+      // Scrolls down 90px from the top of
+      // the document, to resize the myNavbar
+      // padding and the title font-size
+      window.onscroll = function() {
+          scrollFunction()
+      };
+            
+      function scrollFunction() {
+          if (document.body.scrollTop > 90 ||
+              document.documentElement.scrollTop > 90)
+          {
+              document.getElementById("myNavbar")
+                          .style.padding = "15px 0";
+                    
+              document.getElementById("header")
+                      .style.cssText = "background-color: white; backdrop-filter: blur(10px); box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);";
+          } 
+          else {
+              document.getElementById("myNavbar")
+                          .style.padding = "35px 0";
+                            
+              document.getElementById("header")
+                          .style.cssText = "background-color: transparent; backdrop-filter: unset; box-shadow: unset;";
+          }
+      }
+  </script>
   </body>
 </html>

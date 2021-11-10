@@ -11,6 +11,7 @@ html, body {
   font-size: 13px;
   font-weight: 600;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 #btn__phone {
@@ -208,9 +209,11 @@ html, body {
 #header {
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   z-index: 1000;
 }
 
@@ -259,8 +262,8 @@ html, body {
 }
 
 #header .navbar .nav-item:hover .nav-link::after {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 #header .navbar .active .nav-link::after {
@@ -332,6 +335,20 @@ html, body {
   margin-right: 11.7px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  #header {
+    background-color: #ffffff;
+  }
+  #header .navbar {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .navbar .navbar-brand img {
+    width: 55%;
+  }
+}
+
 .about {
   position: relative;
 }
@@ -371,6 +388,30 @@ html, body {
 .about .about__content img {
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .about .about__content .about__text h1 {
+    font-size: 47.25px;
+  }
+  .about .about__content .about__text h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about .about__content img {
+    width: 61%;
+  }
+  .about .about__content .about__text {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about .about__content img {
+    width: 100%;
+  }
 }
 
 .people {
@@ -497,17 +538,32 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .findCourse .findCourse__content .findCourse__right h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .findCourse .findCourse__content .findCourse__right h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+}
+
 .contact {
   padding: 120px 0;
   position: relative;
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
-.contact .top-cover-img img {
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+.contact .container {
+  padding-bottom: 120px;
 }
 
 .contact .contact__content .contact__item h2 {
@@ -590,5 +646,24 @@ html, body {
 
 .contact .contact__content .contact__item .subcribe :focus {
   border: 1px solid white;
+}
+
+@media screen and (max-width: 576px) {
+  .contact .contact__content .contact__item h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .contact .contact__content .contact__item .contact__text p {
+    font-size: 12.5px;
+  }
+  .contact .contact__content .contact__item .contact__text li a {
+    font-size: 12.5px;
+  }
+  .contact .contact__content .contact__item .subcribe input {
+    font-size: 12.5px;
+  }
+  .contact .contact__content .contact__item .subcribe #btn__contact a {
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
