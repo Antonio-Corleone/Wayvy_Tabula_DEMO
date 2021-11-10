@@ -398,6 +398,7 @@
             document.getElementById("header").style.cssText = "background-color: white;";
           };
         } else {
+          document.getElementById("myNav").classList.remove("show");
           document.getElementById("header").style.background = "transparent";
           window.onscroll = function() {
             document.getElementById("header").style.background = "transparent";
